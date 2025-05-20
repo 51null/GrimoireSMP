@@ -1,0 +1,56 @@
+name: GrimoireSMP
+version: '1.0-SNAPSHOT'
+main: noah.grimoireSMP.GrimoireSMP
+api-version: '1.21.3'
+depend: [ProtocolLib]
+commands:
+  resetall:
+    description: Resets all scroll data.
+    usage: /resetall
+  givehandle:
+    description: Gives a player a Grimoire Handle.
+    usage: /givehandle <player>
+  giverune:
+    description: Gives a player a Rune.
+    usage: /giverune <player>
+  ally:
+    description: Toggle alliance with another player
+    usage: /ally <player>
+  givescroll:
+    description: Assigns a specific scroll to a player
+    usage: /givescroll <scroll> <player>
+    permission: grimoire.givescroll
+  scrollstart:
+    description: Start the GrimoireSMP scroll system
+    usage: /scrollstart
+    permission: grimoire.scrollstart
+  startritual:
+    description: Start a new world ritual
+    usage: /startritual <x> <y> <z>|random
+    permission: grimoire.ritual.start
+  giveswitchcase:
+    description: "Give a Switch Case to a player"
+    usage: /giveswitchcase <player>
+    permission: grimoire.switchcase.give
+permissions:
+  grimoire.resetall:
+    description: Use /resetall.
+    default: op
+  grimoire.givehandle:
+    description: Use /givehandle.
+    default: op
+  grimoire.giverune:
+    description: Use /giverune.
+    default: op
+  grimoire.givescroll:
+    description: Use /givescroll.
+    default: op
+  grimoire.scrollstart:
+    description: Allows starting the scroll system
+    default: op
+  grimoire.ritual.start:
+    description: Allows use of /startritual
+    default: op
+  grimoire.switchcase.give:
+    description: Allows giving Switch Case items
+    default: op
